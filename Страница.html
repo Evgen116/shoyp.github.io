@@ -1,0 +1,555 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="1.css">
+</head>
+<body ng-app="BlankApp" ng-cloak>
+ 
+  <script src="1.js"></script>
+  <script src="2.js"></script>
+  <script src="3.js"></script>
+  <script src="4.js"></script>
+
+  <script src="5.js"></script>
+  <!-- Тулбар(верхняя штука)-->
+  <md-toolbar style="position: absolute; background-color:#F44336 ">
+      <div class="md-toolbar-tools">
+
+        <md-truncate style="position: absolute; left: 90px; right: 170px; top: 17px; bottom: 13px;">AliEvgen</md-truncate>
+        <md-truncate style="position: absolute; left: 790px; width: 200px;">Евгений Николаев</md-truncate>
+
+        <span flex></span>
+        </div>
+  </md-toolbar>
+
+
+    <!-- Категории -->
+
+    <md-button style="position: relative; top: 70px;left: 10%;background-color:#F44336; ">Категории</md-button>
+    <!-- Аукцион -->
+    <md-button style="position: relative; top: 70px;left: 10%;background-color:#F44336;"
+    href="Аукцион.html">Аукцион</md-button>
+    <!-- Поиск -->
+    <div layout="row">
+        <md-input-container style="position: relative; top: 10px;left: 40%; width: 400px;">
+          <label>Поиск</label>
+          <input>
+        </md-input-container>
+    </div>
+    <md-button style="position: relative; top: -70px;left: 80%;background-color:#F44336; ">Найти</md-button>
+    <!-- Выход -->
+    <md-button style="position: relative; top: -70px;left: 80%;background-color:#F44336;" href="Главная.html">Выход</md-button>
+    <!-- Надпись -->
+    <h1 style="position: relative; top: -60px;left: 40%;">Интересное</h1>
+    <hr style="position: relative;top: -70px; width: 400px">
+
+    <div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+  <md-content>
+    <md-tabs md-dynamic-height="" md-border-bottom=""
+    style="position: relative;">
+      <md-tab label="Одежда">
+        <md-content class="md-padding">
+        <md-button href="Платья.html">Платья</md-button>
+        <br>
+        <br>
+        <md-button href="Футболки.html"> Футболки </md-button>
+        <br>
+        <br>
+        <md-button href="Майки.html"> Майки </md-button>
+        <br>
+        <br>
+        <md-button href="Пижамы.html"> Пижамы и холаты </md-button>
+        <br>
+        <br>
+        <md-button href="Толстовки.html"
+        style="position: relative; top: -270px; left: 200px;"> Толстовки и кофты </md-button>
+        <br>
+        <br>
+        <md-button href="Куртки.html" style="position: relative; top: -270px; left: 200px;"> Куртки </md-button>
+        <br>
+        <br>
+        <md-button href="Костюмы.html" style="position: relative; top: -270px; left: 200px;"> Костюмы </md-button>
+        <br>
+        <br>
+        <md-button href="Рубашки.html" style="position: relative; top: -270px; left: 200px;"> Рубашки </md-button>
+
+        </md-content>
+      </md-tab>
+      <md-tab label="Для детей">
+       <md-content class="md-padding">
+        <md-button href="ПлатьяД.html">Платья</md-button>
+        <br>
+        <br>
+        <md-button href="ФутболкиД.html"> Футболки </md-button>
+        <br>
+        <br>
+        <md-button href="МайкиД.html"> Майки </md-button>
+        <br>
+        <br>
+        <md-button href="ПижамыД.html"> Пижамы </md-button>
+        <br>
+        <br>
+        <md-button href="Игрушки.html"
+        style="position: relative; top: -270px; left: 200px;"> Игрушки </md-button>
+        <br>
+        <br>
+        <md-button href="КурткиД.html" style="position: relative; top: -270px; left: 200px;"> Куртки </md-button>
+        <br>
+        <br>
+        <md-button href="Ранцы.html" style="position: relative; top: -270px; left: 200px;"> Ранцы </md-button>
+        <br>
+        <br>
+        <md-button href="РубашкиД.html" style="position: relative; top: -270px; left: 200px;"> Рубашки </md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Техника">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Кухня.html">Для кухни</md-button>
+        <br>
+        <br>
+        <md-button href="Кофиварка.html"> Кофиварки </md-button>
+        <br>
+        <br>
+        <md-button href="Мультиварка.html"> Мультиварки </md-button>
+        <br>
+        <br>
+        <md-button href="Инструменты.html"> Ручные инструменты </md-button>
+        <br>
+        <br>
+        <md-button href="Телефон.html"
+        style="position: relative; top: -270px; left: 200px;"> Телефоны </md-button>
+        <br>
+        <br>
+        <md-button href="Компьютеры.html" style="position: relative; top: -270px; left: 200px;"> Компьютеры </md-button>
+        <br>
+        <br>
+        <md-button href="Ноутбук.html" style="position: relative; top: -270px; left: 200px;"> Ноутбуки </md-button>
+        <br>
+        <br>
+        <md-button href="Планшет.html" style="position: relative; top: -270px; left: 200px;"> Планшеты </md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Бижутерия">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Серьги.html">Серьги</md-button>
+        <br>
+        <br>
+        <md-button href="Браслеты.html">Браслеты</md-button>
+        <br>
+        <br>
+        <md-button href="Кольца.html">Кольца</md-button>
+        <br>
+        <br>
+        <md-button href="Часы.html">Часы</md-button>
+        <br>
+        <br>
+        <md-button href="Бусы.html"
+        style="position: relative; top: -270px; left: 200px;"> Бусы</md-button>
+        <br>
+        <br>
+        <md-button href="Серебро.html" style="position: relative; top: -270px; left: 200px;">Серебро</md-button>
+        <br>
+        <br>
+        <md-button href="Жемчуг.html" style="position: relative; top: -270px; left: 200px;">Жемчуг</md-button>
+        <br>
+        <br>
+        <md-button href="Камни.html" style="position: relative; top: -270px; left: 200px;">Камни</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Для дома">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Декор.html">Декор</md-button>
+        <br>
+        <br>
+        <md-button href="Альбомы.html">Альбомы</md-button>
+        <br>
+        <br>
+        <md-button href="Подушки.html">Подушки</md-button>
+        <br>
+        <br>
+        <md-button href="Ковры.html">Ковры</md-button>
+        <br>
+        <br>
+        <md-button href="Белье.html"
+        style="position: relative; top: -270px; left: 200px;">Постельное белье</md-button>
+        <br>
+        <br>
+        <md-button href="Люстры.html" style="position: relative; top: -270px; left: 200px;">Люстры</md-button>
+        <br>
+        <br>
+        <md-button href="Аксесуары.html" style="position: relative; top: -270px; left: 200px;">Аксесуары</md-button>
+        <br>
+        <br>
+        <md-button href="Ткань.html" style="position: relative; top: -270px; left: 200px;">Ткань</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Спорт">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Сумки">Спортивные сумки</md-button>
+        <br>
+        <br>
+        <md-button href="Рыбалка.html">Рыбалка</md-button>
+        <br>
+        <br>
+        <md-button href="Велоспорт.html">Велоспорт</md-button>
+        <br>
+        <br>
+        <md-button href="Бег.html">Бег</md-button>
+        <br>
+        <br>
+        <md-button href="Фитнес.html"
+        style="position: relative; top: -270px; left: 200px;">Фитнес</md-button>
+        <br>
+        <br>
+        <md-button href="Охота.html" style="position: relative; top: -270px; left: 200px;">Охота</md-button>
+        <br>
+        <br>
+        <md-button href="Гольф.html" style="position: relative; top: -270px; left: 200px;">Гольф</md-button>
+        <br>
+        <br>
+        <md-button href="Боулинг.html" style="position: relative; top: -270px; left: 200px;">Боулинг</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Кросота и здоровье">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Макияж.html">Макияж</md-button>
+        <br>
+        <br>
+        <md-button href="Гигиена.html">Гигиена</md-button>
+        <br>
+        <br>
+        <md-button href="Пидекюр.html">Пидекюр</md-button>
+        <br>
+        <br>
+        <md-button href="Краски.html">Краски</md-button>
+        <br>
+        <br>
+        <md-button href="Лак.html"
+        style="position: relative; top: -270px; left: 200px;"> Лак</md-button>
+        <br>
+        <br>
+        <md-button href="Маски.html" style="position: relative; top: -270px; left: 200px;">Маски</md-button>
+        <br>
+        <br>
+        <md-button href="Платья.html" style="position: relative; top: -270px; left: 200px;">Скрабы</md-button>
+        <br>
+        <br>
+        <md-button href="Скрабы.html" style="position: relative; top: -270px; left: 200px;">Наборы</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Самое популярное">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Платья">Платья</md-button>
+        <br>
+        <br>
+        <md-button href="Футболки.html"> Футболки </md-button>
+        <br>
+        <br>
+        <md-button href="Велоспорт.html">Велоспорт</md-button>
+        <br>
+        <br>
+        <md-button href="Телефон.html">Телефоны</md-button>
+        <br>
+        <br>
+        <md-button href="Планшет.html"
+        style="position: relative; top: -270px; left: 200px;">Планшеты</md-button>
+        <br>
+        <br>
+        <md-button href="Ноутбук.html" style="position: relative; top: -270px; left: 200px;">Ноутбуки</md-button>
+        <br>
+        <br>
+        <md-button href="Костюмы.html" style="position: relative; top: -270px; left: 200px;"> Костюмы </md-button>
+        <br>
+        <br>
+        <md-button href="Для дома.html" style="position: relative; top: -270px; left: 200px;">Для дома</md-button>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+      </div>
+    <!-- Интересное -->
+
+
+
+
+    <!-- Популярное -->
+    <h1 style="position: relative; top: 0px; left: 40%;">Популярное</h1>
+    <hr style="position: relative;top: 0px; width: 400px">
+    
+     <div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+  <md-content>
+    <md-tabs md-dynamic-height="" md-border-bottom=""
+    style="position: relative;">
+      <md-tab label="Одежда">
+        <md-content class="md-padding">
+        <md-button href="Платья.html">Платья</md-button>
+        <br>
+        <br>
+        <md-button href="Футболки.html"> Футболки </md-button>
+        <br>
+        <br>
+        <md-button href="Майки.html"> Майки </md-button>
+        <br>
+        <br>
+        <md-button href="Пижамы.html"> Пижамы и холаты </md-button>
+        <br>
+        <br>
+        <md-button href="Толстовки.html"
+        style="position: relative; top: -270px; left: 200px;"> Толстовки и кофты </md-button>
+        <br>
+        <br>
+        <md-button href="Куртки.html" style="position: relative; top: -270px; left: 200px;"> Куртки </md-button>
+        <br>
+        <br>
+        <md-button href="Костюмы.html" style="position: relative; top: -270px; left: 200px;"> Костюмы </md-button>
+        <br>
+        <br>
+        <md-button href="Рубашки.html" style="position: relative; top: -270px; left: 200px;"> Рубашки </md-button>
+
+        </md-content>
+      </md-tab>
+      <md-tab label="Для детей">
+       <md-content class="md-padding">
+        <md-button href="ПлатьяД.html">Платья</md-button>
+        <br>
+        <br>
+        <md-button href="ФутболкиД.html"> Футболки </md-button>
+        <br>
+        <br>
+        <md-button href="МайкиД.html"> Майки </md-button>
+        <br>
+        <br>
+        <md-button href="ПижамыД.html"> Пижамы </md-button>
+        <br>
+        <br>
+        <md-button href="Игрушки.html"
+        style="position: relative; top: -270px; left: 200px;"> Игрушки </md-button>
+        <br>
+        <br>
+        <md-button href="КурткиД.html" style="position: relative; top: -270px; left: 200px;"> Куртки </md-button>
+        <br>
+        <br>
+        <md-button href="Ранцы.html" style="position: relative; top: -270px; left: 200px;"> Ранцы </md-button>
+        <br>
+        <br>
+        <md-button href="РубашкиД.html" style="position: relative; top: -270px; left: 200px;"> Рубашки </md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Техника">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Кухня.html">Для кухни</md-button>
+        <br>
+        <br>
+        <md-button href="Кофиварка.html"> Кофиварки </md-button>
+        <br>
+        <br>
+        <md-button href="Мультиварка.html"> Мультиварки </md-button>
+        <br>
+        <br>
+        <md-button href="Инструменты.html"> Ручные инструменты </md-button>
+        <br>
+        <br>
+        <md-button href="Телефон.html"
+        style="position: relative; top: -270px; left: 200px;"> Телефоны </md-button>
+        <br>
+        <br>
+        <md-button href="Компьютеры.html" style="position: relative; top: -270px; left: 200px;"> Компьютеры </md-button>
+        <br>
+        <br>
+        <md-button href="Ноутбук.html" style="position: relative; top: -270px; left: 200px;"> Ноутбуки </md-button>
+        <br>
+        <br>
+        <md-button href="Планшет.html" style="position: relative; top: -270px; left: 200px;"> Планшеты </md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Бижутерия">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Серьги.html">Серьги</md-button>
+        <br>
+        <br>
+        <md-button href="Браслеты.html">Браслеты</md-button>
+        <br>
+        <br>
+        <md-button href="Кольца.html">Кольца</md-button>
+        <br>
+        <br>
+        <md-button href="Часы.html">Часы</md-button>
+        <br>
+        <br>
+        <md-button href="Бусы.html"
+        style="position: relative; top: -270px; left: 200px;"> Бусы</md-button>
+        <br>
+        <br>
+        <md-button href="Серебро.html" style="position: relative; top: -270px; left: 200px;">Серебро</md-button>
+        <br>
+        <br>
+        <md-button href="Жемчуг.html" style="position: relative; top: -270px; left: 200px;">Жемчуг</md-button>
+        <br>
+        <br>
+        <md-button href="Камни.html" style="position: relative; top: -270px; left: 200px;">Камни</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Для дома">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Декор.html">Декор</md-button>
+        <br>
+        <br>
+        <md-button href="Альбомы.html">Альбомы</md-button>
+        <br>
+        <br>
+        <md-button href="Подушки.html">Подушки</md-button>
+        <br>
+        <br>
+        <md-button href="Ковры.html">Ковры</md-button>
+        <br>
+        <br>
+        <md-button href="Белье.html"
+        style="position: relative; top: -270px; left: 200px;">Постельное белье</md-button>
+        <br>
+        <br>
+        <md-button href="Люстры.html" style="position: relative; top: -270px; left: 200px;">Люстры</md-button>
+        <br>
+        <br>
+        <md-button href="Аксесуары.html" style="position: relative; top: -270px; left: 200px;">Аксесуары</md-button>
+        <br>
+        <br>
+        <md-button href="Ткань.html" style="position: relative; top: -270px; left: 200px;">Ткань</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Спорт">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Сумки">Спортивные сумки</md-button>
+        <br>
+        <br>
+        <md-button href="Рыбалка.html">Рыбалка</md-button>
+        <br>
+        <br>
+        <md-button href="Велоспорт.html">Велоспорт</md-button>
+        <br>
+        <br>
+        <md-button href="Бег.html">Бег</md-button>
+        <br>
+        <br>
+        <md-button href="Фитнес.html"
+        style="position: relative; top: -270px; left: 200px;">Фитнес</md-button>
+        <br>
+        <br>
+        <md-button href="Охота.html" style="position: relative; top: -270px; left: 200px;">Охота</md-button>
+        <br>
+        <br>
+        <md-button href="Гольф.html" style="position: relative; top: -270px; left: 200px;">Гольф</md-button>
+        <br>
+        <br>
+        <md-button href="Боулинг.html" style="position: relative; top: -270px; left: 200px;">Боулинг</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Кросота и здоровье">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Макияж.html">Макияж</md-button>
+        <br>
+        <br>
+        <md-button href="Гигиена.html">Гигиена</md-button>
+        <br>
+        <br>
+        <md-button href="Пидекюр.html">Пидекюр</md-button>
+        <br>
+        <br>
+        <md-button href="Краски.html">Краски</md-button>
+        <br>
+        <br>
+        <md-button href="Лак.html"
+        style="position: relative; top: -270px; left: 200px;"> Лак</md-button>
+        <br>
+        <br>
+        <md-button href="Маски.html" style="position: relative; top: -270px; left: 200px;">Маски</md-button>
+        <br>
+        <br>
+        <md-button href="Платья.html" style="position: relative; top: -270px; left: 200px;">Скрабы</md-button>
+        <br>
+        <br>
+        <md-button href="Скрабы.html" style="position: relative; top: -270px; left: 200px;">Наборы</md-button>
+        </md-content>
+      </md-tab>
+      <md-tab label="Самое популярное">
+        <md-content class="md-padding">
+          <md-content class="md-padding">
+        <md-button href="Платья">Платья</md-button>
+        <br>
+        <br>
+        <md-button href="Футболки.html"> Футболки </md-button>
+        <br>
+        <br>
+        <md-button href="Велоспорт.html">Велоспорт</md-button>
+        <br>
+        <br>
+        <md-button href="Телефон.html">Телефоны</md-button>
+        <br>
+        <br>
+        <md-button href="Планшет.html"
+        style="position: relative; top: -270px; left: 200px;">Планшеты</md-button>
+        <br>
+        <br>
+        <md-button href="Ноутбук.html" style="position: relative; top: -270px; left: 200px;">Ноутбуки</md-button>
+        <br>
+        <br>
+        <md-button href="Костюмы.html" style="position: relative; top: -270px; left: 200px;"> Костюмы </md-button>
+        <br>
+        <br>
+        <md-button href="Для дома.html" style="position: relative; top: -270px; left: 200px;">Для дома</md-button>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+      </div>
+     
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('BlankApp', ['ngMaterial']);
+
+    // Тулбар
+    angular.module('toolbarDemo1', ['ngMaterial'])
+
+.controller('AppCtrl', function($scope) {
+
+});
+
+//Категории
+
+
+(function () {
+  'use strict';
+  angular
+      .module('MyApp',['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
+      .controller('AppCtrl', function() {
+        this.userState = '';
+        this.states = ('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS ' +
+            'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI ' +
+            'WY').split(' ').map(function (state) { return { abbrev: state }; });
+      });
+})();
+
+
+/**
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+**/
+
+
+  </script>
+  
+</body>
+</html>
